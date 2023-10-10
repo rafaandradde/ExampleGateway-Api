@@ -1,0 +1,46 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44307
+        }
+      ],
+      "UpstreamPathTemplate": "/api1/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44393
+        }
+      ],
+      "UpstreamPathTemplate": "/api2/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ],
+
+  "GlobalConfiguration": {
+  }
+}
+/*
+
+  DownstreamPathTemplate -   Define a rota do endpoint real do Microservice
+
+  DownstreamScheme -  esquema de Microservice, HTTPS 
+
+  DownstreamHostsAndPorts -  Host e Port do Microservice serao definidos aqui.
+
+  UpstreamPathTemplate -  O caminho no qual o cliente solicitara o Ocelot API Gateway
+
+  UpstreamHttpmethod -  Os metodos HTTP compativeis com o API Gateway. Com base no metodo de entrada, o Ocelot tambem envia uma solicitaçao de metodo HTTP semelhante para microsservi�os.
+
+  
+*/
