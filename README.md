@@ -17,7 +17,7 @@ direcionando-as para os serviços corretos com base em critérios como URLs, mé
 - **Monitoramento:** Facilita o monitoramento de solicitações e respostas, permitindo uma melhor análise e solução de problemas.
 
 
-Espero que este exemplo tenha sido útil para compreender o poder e a praticidade de um Gateway na simplificação do acesso a serviços diversos. Sinta-se à vontade para explorar e adaptar este projeto para suas próprias necessidades.
+
 
 
 
